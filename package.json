@@ -1,0 +1,27 @@
+{
+  "name": "react-simple",
+  "version": "1.0.0",
+  "description": "Learn how to build and launch React web applications using React, Redux, Webpack, React-Router.",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-env": "~1.5.2",
+    "babel-preset-react": "~6.24.1",
+    "live-server": "~1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "live-server ./public",
+    "babel-compile": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiritpun/React-Simple.git"
+  },
+  "author": "pun sankasem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spiritpun/React-Simple/issues"
+  },
+  "homepage": "https://github.com/spiritpun/React-Simple#readme"
+}
