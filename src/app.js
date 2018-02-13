@@ -1,5 +1,5 @@
 // JSX
-var template = (
+const template = (
     <div>
         <h1>Pun</h1>
         <p>This is JSX from app.js with babel compiled.</p>
@@ -25,17 +25,17 @@ var template = (
 //      p -> Location: BKK
 //  Render templateTwo instend of template
 
-var user = {
+const user = {
     name: 'Pun Sankasem',
     age: 28,
     location: 'BKK'
 };
 
-var getLocation = (location) => {
+const getLocation = (location) => {
     return location ? <p>Location: {location}</p> : '';
 };
 
-var templateTwo = (
+const templateTwo = (
     <div>
         <h1>{user.name ? user.name : 'Anonymous'}</h1>
         {user.age && <p>Age: 28</p>}
@@ -43,6 +43,6 @@ var templateTwo = (
     </div>
 );
 
-var appRoot = document.getElementById('app');
+const appRoot = document.getElementById('app');
 
 ReactDOM.render(templateTwo, appRoot);
